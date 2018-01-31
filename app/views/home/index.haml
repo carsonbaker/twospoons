@@ -1,0 +1,94 @@
+- @page_class = 'index'
+
+.row.outline.no-gutters.justify-content-center.noborbot
+
+  .col.d-none.d-lg-block
+    = image_tag 'boot.png', :class => 'img-fluid p-4 p-xl-5'
+  = reg_layout do
+    %br/
+    %br/
+    %h1.text-center.mb-4  
+      Austin-owned and -proud, from the guys who made your favorite grab-and-go foods for over a decade.
+  .col.d-none.d-lg-block
+    = image_tag 'windmill.png', :class => 'img-fluid p-4 p-xl-5'
+
+#menu.row.justify-content-center.no-gutters.outline
+  .col-6
+
+    -#.col-4.offset-4= image_tag 'the-main-menu3.png', :class => 'img-fluid', :alt => "The Main Menu"
+    .menu-section
+      %h2 The Main Menu
+      .inset
+
+        = menu_item("The Mexicali", 'food/the-mexicali.jpg', 'Sweet chili hummus, avocado, homemade black beans, fire roasted corn, onions, sweet carrots, brown rice in a flour tortilla')
+
+        = menu_item("The Dharma", "food/the-dharma.jpg", "Yellow curry hummus, fresh spinach, sweet carrots, onions, fire roasted corn, sun-dried tomatoes, brown rice in a flour tortilla")
+
+        = menu_item("The Leonidas", "food/the-leonidas.jpg", "Greek hummus, feta, tomato, black olive, salsa, onions, spinach, brown rice in a flour tortilla")
+
+        = menu_item("Primal Pack", "food/primal-pack.jpg", "lower-carb, protein-rich snack with almonds, walnuts, white cheddar cheese, red quinoa salad, and a hard-boiled egg")
+
+        = menu_item("Turkey with Basil Pesto", "food/turkey-basil-pesto.jpg", "Sliced turkey, smoked provolone cheese, basil aioli mayo, and green leaf lettuce on wheat bread")
+
+        = menu_item("Cranberry Tarragon Chicken", "placeholder.jpg", "Chicken, cranberries, mayonnaise on wheat bread")
+
+        = menu_item("Dad's B.L.T.", "placeholder.jpg", "Applewood smoked bacon, fresh tomato, green leaf lettuce, mayonnaise on wheat bread")
+
+        = menu_item("Cordon Bleu", "placeholder.jpg", "Smoked ham, chicken, Swiss cheese, mayonnaise on wheat bread")
+
+        = menu_item("Creamy Havarti Turkey", "food/creamy-havarti-turkey.jpg", "Sliced turkey, creamy Havarti cheese, yellow mustard")
+
+        = menu_item("Thanksgiving Leftovers", "food/thanksgiving-leftovers.jpg", "Sliced turkey, cranberry compote mayo, and green leaf lettuce on wheat bread")
+
+        = menu_item("Classic Ham", "food/classic-ham.jpg", "Honey smoked ham, Swiss cheese, Dijon mustard, mayo, and green leaf lettuce on rye bread")
+
+        = menu_item("Italian Gouda", "food/italian-gouda.jpg", "Italian salmi, Gouda cheese, fire-roasted red peppers, mayo, and yellow mustard on a French baguette")
+
+        = menu_item("PB & J (Vegan)", "food/vegan-pbj.jpg", "Creamy peanut butter and fruit jelly on wheat bread")
+
+        = menu_item("Basil Pesto Chicken", "food/basil-pesto-chicken.jpg", "Fresh pesto chicken salad, fresh basil, and green leaf lettuce on wheat bread")
+
+        = menu_item("Yellow Curry Chicken", "food/yellow-curry-chicken.jpg", "Tasty curried chicken salad, raisins and green leaf lettuce on wheat bread")
+
+        = menu_item("Pesto Aioli Egg", "food/pesto-aioli-egg.jpg", "Basil pesto ailoi, egg, and fresh spinach on wheat bread")
+
+
+  .col-6
+
+    .menu-section
+      %h2 The Sides
+      .inset
+        = menu_item("Fresh Fruit", "food/fruit-side.jpg", "Pineapple, melon medley, grapes")
+
+        = menu_item("Honey Nut Broccoli", "food/honey-nut-broccoli.jpg", "Broccoli, almonds, cranberries, carrots, red onion, greek yogurt, Sriracha sauce, honey, mayo, salt and pepper")
+
+        = menu_item("Chips", "placeholder.jpg", "(catering only)")
+
+    .menu-section
+      %h2 Snack Packs
+      .inset
+        = menu_item("Snack Packs", "food/primal-pack.jpg", "Almonds, boiled egg, cheese, walnuts")
+
+    .menu-section
+
+      %h2 Drinks
+      .inset
+        .row
+          .col.text-center
+            %h3 Tea 
+          .col.bd-0.text-center
+            %h3 Water
+
+      %br/
+
+    .menu-section
+
+      %h2.mb-0 Boxed Lunches
+      .inset
+        %p Our boxed lunches include a sandwich or wrap packaged individually along with an optional side, drink or desert
+
+    .menu-section
+
+      %h2.mb-0 Party Trays
+      .inset
+        %p Party trays are served on a large platter or aluminum tray. Sandwiches and wraps are served individually wrapped, or portioned at request 1⁄4 or 1⁄2 cut.
