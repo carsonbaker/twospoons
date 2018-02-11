@@ -17,4 +17,4 @@ However, the mounted core can be modified as needed:
 =end
 
 # Mounts the core application for this project
-Padrino.mount('Lipowoil::App', :app_file => Padrino.root('app/app.rb')).to('/')
+Padrino.mount('TwoSpoons::App', :app_file => Padrino.root('app/app.rb')).to('/')

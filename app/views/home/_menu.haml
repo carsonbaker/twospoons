@@ -1,0 +1,130 @@
+#menu-yummy.row.justify-content-center.no-gutters
+  .col-md-6
+
+    .menu-section
+      %h2.fancy
+        %span The Main Menu
+
+      .inset
+
+        = menu_item("The Mexicali", 'food/the-mexicali.jpg', 'Sweet chili hummus, avocado, homemade black beans, fire roasted corn, onions, sweet carrots, brown rice in a flour tortilla')
+
+        = menu_item("The Dharma", "food/the-dharma.jpg", "Yellow curry hummus, fresh spinach, sweet carrots, onions, fire roasted corn, sun-dried tomatoes, brown rice in a flour tortilla")
+
+        = menu_item("The Leonidas", "food/the-leonidas.jpg", "Greek hummus, feta, tomato, black olive, salsa, onions, spinach, brown rice in a flour tortilla")
+
+        = menu_item("Primal Pack", "food/primal-pack.jpg", "lower-carb, protein-rich snack with almonds, walnuts, white cheddar cheese, red quinoa salad, and a hard-boiled egg")
+
+        = menu_item("Turkey with Basil Pesto", "food/turkey-basil-pesto.jpg", "Sliced turkey, smoked provolone cheese, basil aioli mayo, and green leaf lettuce on wheat bread")
+
+        = menu_item("Cranberry Tarragon Chicken", "placeholder.png", "Chicken, cranberries, mayonnaise on wheat bread")
+
+        = menu_item("Dad's B.L.T.", "placeholder.png", "Applewood smoked bacon, fresh tomato, green leaf lettuce, mayonnaise on wheat bread")
+
+        = menu_item("Cordon Bleu", "placeholder.png", "Smoked ham, chicken, Swiss cheese, mayonnaise on wheat bread")
+
+        = menu_item("Creamy Havarti Turkey", "food/creamy-havarti-turkey.jpg", "Sliced turkey, creamy Havarti cheese, yellow mustard")
+
+        = menu_item("Thanksgiving Leftovers", "food/thanksgiving-leftovers.jpg", "Sliced turkey, cranberry compote mayo, and green leaf lettuce on wheat bread")
+
+        = menu_item("Classic Ham", "food/classic-ham.jpg", "Honey smoked ham, Swiss cheese, Dijon mustard, mayo, and green leaf lettuce on rye bread")
+
+        = menu_item("Italian Gouda", "food/italian-gouda.jpg", "Italian salmi, Gouda cheese, fire-roasted red peppers, mayo, and yellow mustard on a French baguette")
+
+        = menu_item("PB & J (Vegan)", "food/vegan-pbj.jpg", "Creamy peanut butter and fruit jelly on wheat bread")
+
+        = menu_item("Basil Pesto Chicken", "food/basil-pesto-chicken.jpg", "Fresh pesto chicken salad, fresh basil, and green leaf lettuce on wheat bread")
+
+        = menu_item("Yellow Curry Chicken", "food/yellow-curry-chicken.jpg", "Tasty curried chicken salad, raisins and green leaf lettuce on wheat bread")
+
+        = menu_item("Pesto Aioli Egg", "food/pesto-aioli-egg.jpg", "Basil pesto ailoi, egg, and fresh spinach on wheat bread")
+
+
+  .col-md-6
+
+    .menu-section
+      %h2.fancy
+        %span The Sides
+      .inset
+        = menu_item("Fresh Fruit", "food/fruit-side.jpg", "Pineapple, melon medley, grapes")
+
+        = menu_item("Honey Nut Broccoli", "food/honey-nut-broccoli.jpg", "Broccoli, almonds, cranberries, carrots, red onion, greek yogurt, Sriracha sauce, honey, mayo, salt and pepper")
+
+        = menu_item("Chips", "placeholder.png", "(catering only)")
+
+    .menu-section
+      %h2 Snack Packs
+      .inset
+        = menu_item("Snack Packs", "food/primal-pack.jpg", "Almonds, boiled egg, cheese, walnuts")
+
+    .menu-section
+
+      %h2.fancy
+        %span Drinks
+
+      .inset
+        .row
+          .col.text-center
+            %h3 Iced Tea 
+          .col.bd-0.text-center
+            %h3 Water
+
+      %br/
+
+    .menu-section
+      %h2.fancy.mb-0
+        %span Boxed Lunches
+
+      .inset.text-center
+        %p Our boxed lunches include a sandwich or wrap packaged individually along with an optional side, drink or desert
+
+    .menu-section
+      %h2.fancy.mb-0
+        %span Party Trays
+      .inset.text-center
+        %p Party trays are served on a large platter or aluminum tray. Sandwiches and wraps are served individually wrapped, or portioned at request 1⁄4 or 1⁄2 cut.
+
+
+    #order-now.menu-section
+      %h2.fancy.mb-0
+        %span Order
+
+      .row
+        .col
+          = link_to "https://www.bitesquad.com/food/two-spoons/13470/" do
+            = image_tag 'bitesquad.png', :class => 'img-fluid'
+            BiteSquad
+
+        .col
+          = link_to "https://www.bitesquad.com/food/two-spoons/13470/catering" do
+            = image_tag 'bitesquad.png', :class => 'img-fluid'
+            BiteSquad (Catering)
+
+        .col
+          = link_to "https://www.ezcater.com/catering/two-spoons-austin" do
+            = image_tag 'ezcater.png', :class => 'img-fluid'
+            EZ Cater
+
+    %br/
+    %br/
+
+    #about-us.menu-section
+      %h2.fancy.mb-0
+        %span Contact Us
+      .inset
+        %p.alert.text-muted.text-center
+          %big
+            For pricing and other information, call us at
+            = link_to "(512) 639-4114", "tel:5126394114"
+            or email us at
+            = link_to("twospoonsfood@gmail.com", "mailto:twospoonsfood@gmail.com") + "."
+    
+    #spots-to-buy.menu-section
+      %h2.fancy
+        %span Where to Buy
+
+      %br/
+      #map
+      
+= initialize_google_map
+= google_maps_javascript_script_tag

@@ -9,5 +9,5 @@ def app
   ##
   # You can hanlde all padrino applications using instead:
   #   Padrino.application
-  Lipowoil.tap { |app|  }
+  TwoSpoons.tap { |app|  }
 end
