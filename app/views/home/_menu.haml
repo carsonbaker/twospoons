@@ -63,11 +63,14 @@
         %span Drinks
 
       .inset
-        .row
-          .col.text-center
-            %h3 Iced Tea 
-          .col.bd-0.text-center
-            %h3 Water
+        = tight_layout(:style => 'margin: 0 auto') do
+          .row
+            .col.text-center
+              = image_tag 'drink/goldpeak.jpg', :class => 'img-fluid'
+              %h3 Iced Tea 
+            .col.bd-0.text-center
+              = image_tag 'drink/water.jpg', :class => 'img-fluid'
+              %h3 Water
 
       %br/
 
@@ -76,7 +79,7 @@
         %span Boxed Lunches
 
       .inset.text-center
-        %p Our boxed lunches include a sandwich or wrap packaged individually along with an optional side, drink or desert
+        %p Our boxed lunches include a sandwich or wrap packaged individually along with an optional side, drink or desert.
 
     .menu-section
       %h2.fancy.mb-0

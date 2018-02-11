@@ -12,8 +12,10 @@ module TwoSpoons
       content_tag("div", class: "col-5 col-sm-4 col-md-3 col-lg-3", &block)
     end
 
-    def tight_layout(&block)
-      content_tag("div", class: "col-xl-6 col-lg-7 col-md-9 col-sm-10", &block)
+    def tight_layout(options, &block)
+      options[:class] ||= ""
+      options[:class] += " col-xl-6 col-lg-7 col-md-9 col-sm-10"
+      content_tag("div", options, &block)
     end
 
     def reg_layout(&block)

@@ -81,6 +81,16 @@ main {
   background-repeat: no-repeat;
   background-position: center top; }
 
+@keyframes lift {
+  to {
+    transform: scale(1.05); } }
+#navvy a {
+  display: block; }
+  #navvy a:hover {
+    animation-name: lift;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: .1s; }
 #navvy #foods {
   background-image: url("/images/menu.png"); }
 #navvy #order {
@@ -151,18 +161,17 @@ h1.fancy, h2.fancy {
   height: 2px;
   background: #85744f;
   top: 50%;
-  width: 700px;
-  margin-top: -1px; }
+  width: 700px; }
 
 .fancy > span:before {
   right: 100%;
-  margin-right: 15px;
+  margin-right: 1em;
   -webkit-transform-origin: right top;
   transform-origin: right top; }
 
 .fancy > span:after {
   left: 100%;
-  margin-left: 15px;
+  margin-left: 1em;
   -webkit-transform-origin: left top;
   transform-origin: left top; }
 
