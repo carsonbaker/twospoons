@@ -28,7 +28,7 @@ module TwoSpoons
 
     def menu_item(name, img_path, desc)
       %(
-        <div class='media'>
+        <div class='media mb-4'>
           <div class='col-4 mr-sm-1 mr-md-2'>
             #{image_tag img_path, :class => 'img-fluid rounded'}
           </div>

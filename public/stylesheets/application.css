@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  font-family: Inconsolata; }
+  font-family: Nunito; }
 
 a {
   color: #0d93c5; }
@@ -16,22 +16,21 @@ a {
   .menu-section .inset {
     padding: 1.5em 1em 1.5em 0; }
   .menu-section h2 {
-    text-transform: uppercase;
     background: #fff;
-    color: #666; }
+    color: #3873a4; }
   .menu-section h3 {
-    font-weight: 800;
-    text-transform: uppercase;
     margin-bottom: 0;
-    letter-spacing: 1px; }
+    color: cadetblue; }
 
 #menu .col-md-6:first-child h2 {
   margin-right: .75em; }
 
 .bortop {
-  border-top: 2px solid #857352;
-  background: #fff;
-  background: linear-gradient(180deg, #f3f1ed, #fff); }
+  border-top: 2px solid #eee; }
+
+.seagreen {
+  color: mediumseagreen;
+  color: cadetblue; }
 
 #logo {
   width: 10em;
@@ -112,7 +111,7 @@ main {
   left: calc(50% - 8em);
   top: -13em;
   background: #fff;
-  border: 2px solid #857352;
+  border: 2px solid #eee;
   border-radius: 50%;
   width: 16em;
   height: 16em;
@@ -144,8 +143,7 @@ main {
     padding: 0; } }
 h1.fancy, h2.fancy {
   text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1.5px; }
+  font-weight: 800; }
 
 .fancy {
   text-align: center;
@@ -160,6 +158,7 @@ h1.fancy, h2.fancy {
   position: absolute;
   height: 2px;
   background: #85744f;
+  background: #ffd24d;
   top: 50%;
   width: 700px; }
 
