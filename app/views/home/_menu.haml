@@ -126,7 +126,7 @@
         %p Party trays are served on a large platter or aluminum tray. Sandwiches and wraps are served individually wrapped, or portioned at request 1⁄4 or 1⁄2 cut.
 
       %br/
-      
+
     #order-now.menu-section
       %h2.fancy.mb-0
         %span Order
@@ -160,6 +160,32 @@
             = link_to "(512) 829-8806", "tel:5128298806"
             or email us at
             = link_to("twospoonsfood@gmail.com", "mailto:twospoonsfood@gmail.com") + "."
+
+    #social.menu-section
+      %h2.fancy.mb-0
+        %span Social Media
+
+      .row
+        .col-4.text-center
+
+          = link_to "https://www.facebook.com/Twospoonsfood/" do
+            = image_tag 'social/fb.png', :class => 'img-fluid p-4'
+            Facebook
+
+        .col-4.text-center
+
+          = link_to "https://www.instagram.com/two_spoons_food/" do
+            = image_tag 'social/insta.png', :class => 'img-fluid p-4'
+            Instagram
+
+        .col-4.text-center
+
+          = link_to "https://twitter.com/twospoonsfood" do
+            = image_tag 'social/tw.png', :class => 'img-fluid p-4'
+            Twitter
+
+    %br/
+    %br/
 
     #spots-to-buy.menu-section
       %h2.fancy
