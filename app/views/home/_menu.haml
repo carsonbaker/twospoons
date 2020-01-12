@@ -7,13 +7,11 @@
 
       .inset
 
-        = menu_item("The Mexicali", 'food/squares/the-mexicali.jpg', 'Sweet chili hummus, avocado, homemade black beans, fire roasted corn, onions, sweet carrots, brown rice in a flour tortilla')
+        = menu_item("The Mexicali", 'food/squares/the-mexicali.jpg', 'Black bean spread, avocado, fire-roasted corn pico de gallo, onions, sweet carrots, brown rice in a flour tortilla')
 
         = menu_item("The Dharma", "food/squares/the-dharma.jpg", "Yellow curry hummus, fresh spinach, sweet carrots, onions, fire roasted corn, sun-dried tomatoes, brown rice in a flour tortilla")
 
         = menu_item("The Leonidas", "food/squares/the-leonidas.jpg", "Greek hummus, feta, tomato, black olive, salsa, onions, spinach, brown rice in a flour tortilla")
-
-        = menu_item("Primal Pack", "food/squares/primal-pack.jpg", "lower-carb, protein-rich snack with almonds, walnuts, white cheddar cheese, red quinoa salad, and a hard-boiled egg")
 
         = menu_item("Turkey with Basil Pesto", "food/squares/turkey-basil-pesto.jpg", "Sliced turkey, smoked provolone cheese, basil aioli mayo, and green leaf lettuce on wheat bread")
 
@@ -27,15 +25,15 @@
 
         = menu_item("Thanksgiving Leftovers", "food/squares/thanksgiving-leftovers.jpg", "Sliced turkey, cranberry compote mayo, and green leaf lettuce on wheat bread")
 
-        = menu_item("Classic Ham", "food/squares/classic-ham.jpg", "Honey smoked ham, Swiss cheese, Dijon mustard, mayo, and green leaf lettuce on rye bread")
+        = menu_item("Classic Ham", "food/squares/classic-ham.jpg", "Smoked ham and cheese, spicy mustard, mayo, and green leaf lettuce on rye bread")
 
-        = menu_item("Italian Gouda", "food/squares/italian-gouda.jpg", "Italian salami, Gouda cheese, fire-roasted red peppers, mayo, and yellow mustard on a French baguette")
+        = menu_item("Italian Gouda", "food/squares/italian-gouda.jpg", "Genoa salami, Gouda cheese, fire-roasted red peppers, mayo, and yellow mustard on a hoagie roll")
 
         = menu_item("PB & J (Vegan)", "food/squares/vegan-pbj.jpg", "Creamy peanut butter and fruit jelly on wheat bread")
 
-        = menu_item("Basil Pesto Chicken", "food/squares/basil-pesto-chicken.jpg", "Fresh pesto chicken salad, fresh basil, and green leaf lettuce on wheat bread")
+        = menu_item("Basil Pesto Chicken", "food/squares/basil-pesto-chicken.jpg", "Fresh pesto chicken salad, fresh basil, and green leaf lettuce on wheat bread (catering only)")
 
-        = menu_item("Yellow Curry Chicken", "food/squares/yellow-curry-chicken.jpg", "Tasty curried chicken salad, raisins and green leaf lettuce on wheat bread")
+        = menu_item("Yellow Curry Chicken", "food/squares/yellow-curry-chicken.jpg", "Tasty curried chicken salad, raisins and green leaf lettuce on wheat bread (catering only)")
 
         = menu_item("Pesto Aioli Egg", "food/squares/pesto-aioli-egg.jpg", "Basil pesto ailoi, egg, and fresh spinach on wheat bread")
 
@@ -46,7 +44,7 @@
       %h2.fancy
         %span The Sides
       .inset
-        = menu_item("Fresh Fruit", "food/squares/fruit-side.jpg", "Pineapple, melon medley, grapes")
+        = menu_item("Fresh Fruit", "food/squares/fruit-side.jpg", "Pineapple, melon medley, grapes (catering only)")
 
         = menu_item("Honey Nut Broccoli", "food/squares/honey-nut-broccoli.jpg", "Broccoli, almonds, cranberries, carrots, red onion, greek yogurt, Sriracha sauce, honey, mayo, salt and pepper")
 
@@ -56,7 +54,7 @@
       %h2.fancy
         %span Snack Packs
       .inset
-        = menu_item("Snack Packs", "food/squares/primal-pack.jpg", "Almonds, boiled egg, cheese, walnuts")
+        = menu_item("Primal Packs", "food/squares/primal-pack.jpg", "Lower-carb, protein-rich snack with almonds, walnuts, white cheddar cheese, red quinoa salad, and a hard-boiled egg")
 
     .menu-section
 
@@ -133,14 +131,9 @@
 
       .row
         .col
-          = link_to "https://www.bitesquad.com/food/two-spoons/13470/" do
-            = image_tag 'bitesquad.png', :class => 'img-fluid'
-            BiteSquad
-
-        .col
-          = link_to "https://www.bitesquad.com/food/two-spoons/13470/catering" do
-            = image_tag 'bitesquad.png', :class => 'img-fluid'
-            BiteSquad (Catering)
+          = link_to "https://cater2.me" do
+            = image_tag 'cater2me.png', :class => 'img-fluid'
+            Cater2.me
 
         .col
           = link_to "https://www.ezcater.com/catering/pvt/two-spoons-austin" do
@@ -156,7 +149,7 @@
       .inset
         %p.alert.text-muted.text-center
           %big
-            For pricing and other information, call us at
+            For pricing, ordering, and other information, call us at
             = link_to "(512) 829-8806", "tel:5128298806"
             or email us at
             = link_to("twospoonsfood@gmail.com", "mailto:twospoonsfood@gmail.com") + "."
