@@ -31,9 +31,15 @@
 
         = menu_item("PB & J (Vegan)", "food/squares/vegan-pbj.jpg", "Creamy peanut butter and fruit jelly on wheat bread")
 
-        = menu_item("Basil Pesto Chicken", "food/squares/basil-pesto-chicken.jpg", "Fresh pesto chicken salad, fresh basil, and green leaf lettuce on wheat bread (catering only)")
+        / = menu_item("Basil Pesto Chicken", "food/squares/basil-pesto-chicken.jpg", "Fresh pesto chicken salad, fresh basil, and green leaf lettuce on wheat bread (catering only)")
 
-        = menu_item("Yellow Curry Chicken", "food/squares/yellow-curry-chicken.jpg", "Tasty curried chicken salad, raisins and green leaf lettuce on wheat bread (catering only)")
+        / = menu_item("Yellow Curry Chicken", "food/squares/yellow-curry-chicken.jpg", "Tasty curried chicken salad, raisins and green leaf lettuce on wheat bread (catering only)")
+
+        = menu_item("Greek Turkey", "placeholder2.png", "Turkey, provolone and a creamy tzatziki sauce, lettuce, served on wheat bread")
+
+        = menu_item("Hearty Hoagie", "food/squares/hoagie.jpg", "Ham, salami, provolone and banana peppers with Italian Seasoning on a hoagie roll")
+
+        = menu_item("Pimento Cheese Sandwich", "food/squares/pimento-cheese.jpg", " A classic, served on wheat bread")
 
         = menu_item("Pesto Aioli Egg", "food/squares/pesto-aioli-egg.jpg", "Basil pesto ailoi, egg, and fresh spinach on wheat bread")
 
@@ -49,6 +55,20 @@
         = menu_item("Honey Nut Broccoli", "food/squares/honey-nut-broccoli.jpg", "Broccoli, almonds, cranberries, carrots, red onion, greek yogurt, Sriracha sauce, honey, mayo, salt and pepper")
 
         = menu_item("Chips", "food/squares/chips.jpg", "Baked Lays Variety (catering only)")
+
+        = menu_item("Lemon Orzo Salad", "food/squares/lemon-orzo.jpg", "Orzo tossed with lemon, herbs, diced tomatoes, fresh spinach and feta cheese")
+
+        = menu_item("Mediterranean Garbanzo Salad", "food/squares/med-garbanzo-salad.jpg", "Garbanzos marinated in our Greek Salsa of diced tomatoes, black olives, feta cheese, oregano and parsley")
+
+        = menu_item("Farfalle Pasta Salad", "food/squares/farelli.jpg", "Bowtie pasta with Orange Bell Pepper and Green Peas tossed in a light herbed-vinnaigrette")
+
+        = menu_item("Pecan Fudge Brownie", "food/squares/pecan-brownie.jpg", "An Austin classic, delightfully nutty")
+
+    .menu-section
+      %h2.fancy
+        %span Salads
+      .inset
+        = menu_item("Cranberry & Walnut", "food/squares/cranberry-walnut-salad.jpg", "Walnuts, Feta, Dried Cranberries over baby spinach with a Raspberry Vinnaigrette (add Chicken available)")
 
     .menu-section
       %h2.fancy
@@ -143,6 +163,10 @@
     %br/
     %br/
 
+  .clearfix
+
+  .col-md-6
+
     #about-us.menu-section
       %h2.fancy.mb-0
         %span Contact Us
@@ -154,6 +178,8 @@
             or email us at
             = link_to("twospoonsfood@gmail.com", "mailto:twospoonsfood@gmail.com") + "."
 
+  .col-md-6
+
     #social.menu-section
       %h2.fancy.mb-0
         %span Social Media
@@ -163,29 +189,32 @@
 
           = link_to "https://www.facebook.com/Twospoonsfood/" do
             = image_tag 'social/fb.png', :class => 'img-fluid p-4'
+            %br
             Facebook
 
         .col-4.text-center
 
           = link_to "https://www.instagram.com/two_spoons_food/" do
             = image_tag 'social/insta.png', :class => 'img-fluid p-4'
+            %br
             Instagram
 
         .col-4.text-center
 
           = link_to "https://twitter.com/twospoonsfood" do
             = image_tag 'social/tw.png', :class => 'img-fluid p-4'
+            %br
             Twitter
 
     %br/
     %br/
 
-    #spots-to-buy.menu-section
-      %h2.fancy
-        %span Where to Buy
+    / #spots-to-buy.menu-section
+    /   %h2.fancy
+    /     %span Where to Buy
 
-      %br/
-      #map
+    /   %br/
+    /   #map
 
 =# initialize_google_map
 =# google_maps_javascript_script_tag
