@@ -99,19 +99,29 @@
       %h2.fancy.mb-0
         %span Order
 
+      %br/
+      %br/
+
       .row
-        .col
+        .col-6
+          = link_to "https://www.grubhub.com/restaurant/two-spoons-7212-w-highway-71-austin/1141469" do
+            = image_tag 'grubhub.png', :class => 'img-fluid'
+
+        .col-6
+          = link_to "https://www.ubereats.com/austin/food-delivery/two-spoons/LKvTTmLBTJetszaRkmxwBg" do
+            = image_tag 'ubereats.png', :class => 'img-fluid'
+
+      .row
+        .col-6
           = link_to "https://cater2.me" do
             = image_tag 'cater2me.png', :class => 'img-fluid'
-            Cater2.me
-
-        .col
+  
+        .col-6
           = link_to "https://www.ezcater.com/catering/pvt/two-spoons-austin" do
             = image_tag 'ezcater.png', :class => 'img-fluid'
-            EZ Cater
 
     %br/
-    %br/
+
 
     #about-us.menu-section
       %h2.fancy.mb-0
