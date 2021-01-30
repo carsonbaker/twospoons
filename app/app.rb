@@ -11,10 +11,10 @@ module TwoSpoons
     set :delivery_method, :smtp => {
       :address              => "mail.authsmtp.com",
       :port                 => 2525,
-      :user_name            => '***REMOVED***',
-      :password             => '***REMOVED***',
+      :user_name            => ENV['AUTHSMTP_USERNAME'],
+      :password             => ENV['AUTHSMTP_PASSWORD'],
       :authentication       => :cram_md5,
-      :domain               => '***REMOVED***',
+      :domain               => ENV['AUTHSMTP_DOMAIN'],
       :enable_starttls_auto => true
     }
 
